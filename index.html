@@ -1,0 +1,69 @@
+<!--
+Created by: Dimas Iqbal Nugraha
+Email     : dimasiqball087@gmail
+Date      : 20 September 2018
+-->
+<!DOCTYPE html>
+<html oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">
+    <head>
+        <link rel="stylesheet" href="css/body.css" >
+        <link rel="stylesheet" href="css/style.css" >
+    </head>
+    <body onload="start();return confirm_alert(this);" text="yellow" onresize="resize()" onorientationchange="resize()" onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'" onmouseup="context.fillStyle='rgb(0,0,0)'">
+        <canvas id="starfield" style="z-index:-1; background-color:#000000; position:fixed; top:0; left:0;"></canvas>
+        <pre class="head">
+                   <font class="samurai-blue">  ,:      :,</font>
+                   <font class="samurai-blue">,/./</font> _8_  <font class="samurai-blue">\.\</font>
+                   <font class="samurai-blue">,\ \</font>/(O)\<font class="samurai-blue">/ /</font>
+                    <font class="samurai-blue">,\</font> \:::/ <font class="samurai-blue">/</font>
+                     <font class="samurai-blue">/</font>__---__<font class="samurai-blue">\</font>
+                    (/ -\ / -\)
+                    /\  .V.  /\
+                   /  \,---,/  \
+                   \___TTTTT___/
+                ::::\ <font class="samurai-red">|</font>_____<font class="samurai-red">|</font> /::::
+                (+  _<font class="samurai-red">|</font> __<font class="samurai-red">|</font>__ <font class="samurai-red">|</font>_  +)
+                <font class="samurai-red">|</font>  I_<font class="samurai-red">|</font><font class="samurai-red">WARNING</font><font class="samurai-red">|</font>_I  <font class="samurai-red">|</font>
+                <font class="samurai-red">|</font>  I_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_I  <font class="samurai-red">|</font>
+    ______________________________________________
+   {_F| V| C| K| |<font class="samurai-katana">#################################/</font>
+     ^ ^ ^ ^   ,ww   <font class="indonesia">I</font><font class="indonesia-2">N</font><font class="indonesia">D</font><font class="indonesia-2">O</font><font class="indonesia">N</font><font class="indonesia-2">E</font><font class="indonesia">S</font><font class="indonesia-2">I</font><font class="indonesia">A</font>   ww,
+                   I_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_I
+                   <font class="samurai-red">\</font>_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_<font class="samurai-red">|</font>_<font class="samurai-red">/</font>
+                   I_I_I_I_I_I_I
+                   /:::::_:::::\
+                   <font class="samurai-red">|    / \    |</font>
+                   <font class="samurai-red">|</font>::::<font class="samurai-red">| |</font>::::<font class="samurai-red">|</font>
+                   <font class="samurai-red">|    | |    |</font>
+        </pre>
+        <pre class="header">
+  /$$$$$$   /$$$     /$$   / $$$$$$$     /$$$     /$$   /$    / $  / $$$   $$$    / $$$$$$$    /$$   /$$  /$$$$$$
+ | $$ | $$ | $$ $$  | $$  | $$___  $$   | $$ $$  | $$  \ $$  / $$ | $$ $$ $$ $$  | $$___  $$  | $$  | $$ | $$___/
+ | $$ | $$ | $$\ $$ | $$  | $$   | $$   | $$\ $$ | $$   \ $$/ $$  | $$\ $$$| $$  | $$   | $$  | $$  | $$ | $$$$$
+ | $$$$$$$ | $$ \ $$| $$  | $$   | $$   | $$ \ $$| $$    \ $$$$   | $$ \__/| $$  | $$   | $$  | $$  | $$ |___  $$
+ | $$ | $$ | $$  \ $$ $$  | $$   | $$   | $$  \ $$ $$     | $$    | $$     | $$  | $$   | $$  | $$  | $$  /    $$
+ | $$ | $$ | $$   \  $$$  | /$$$$$$$/   | $$   \  $$$     | $$    | $$     | $$  | /$$$$$$$/  | /$$$$$$/  | $$$$$
+ |__/ | _/ |__/    \___/  |/_______/    |__/    \___/     |__/    |__/     |__/  |/_______/   |/______/   |_____/
+
+        </pre>
+        <div class="box">
+            <span class="attention">WARNING!</span>
+            </br>
+            <span style="margin-left:10px;">CODE</span>
+            <span class="code"style="margin-left:70px;">:SYSTEM</span>
+            </br>
+            <span style="margin-left:10px;">TIME</span>
+            <span id="MyClockDisplay" class="time"style="margin-left:70px;"></span>
+            </br>
+            <span style="margin-left:10px;">DATE</span>
+            <span id="date"class="date"style="margin-left:70px;"></span>
+            <script src="js/date.js"></script>
+            </br>
+            <span style="margin-left:10px;">THANKS</span><span style="margin-left:61px;">:<span>
+            <span class="message"><marquee onmouseover="this.stop()"onmouseout="this.start()">Mr_Rezpector | Mr_Bradz | Mr_Brazzers</marquee></span>
+            <span style="margin-left:10px;">MESSAGE</span><span style="margin-left:52px;">:</span><div class="writen"><span id="writen"></span></div>
+        </div>
+        <script src="js/canvas.js"></script>
+        <script src="js/style.js"></script>
+        <script src="js/write.js"></script>
+    </body>

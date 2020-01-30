@@ -1,0 +1,62 @@
+@-webkit-keyframes warna1 {
+  from {
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px , 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red;
+  }
+  to {
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red;
+  }
+}
+@-webkit-keyframes katana {
+  from {
+    text-shadow: 0 0 10px gray, 0 0 20px gray, 0 0 30px , 0 0 40px gray, 0 0 70px gray, 0 0 80px gray, 0 0 100px gray, 0 0 150px gray;
+  }
+  to {
+    text-shadow: 0 0 5px gray, 0 0 10px gray, 0 0 15px gray, 0 0 20px gray, 0 0 35px gray, 0 0 40px gray, 0 0 50px gray, 0 0 75px gray;
+  }
+}
+.samurai-blue{
+color:blue;
+}
+.samurai-red{
+color:red;
+}
+.samurai-katana{
+color:black;
+-webkit-animation:katana 1.5s ease-in-out infinite;
+}
+.indonesia{
+color:red;
+}
+.indonesia:hover{
+color:white;
+}
+.indonesia-2{
+color:white;
+}
+.indonesia-2:hover{
+color:red;
+}
+.code{
+margin-left:100px;
+}
+.date{
+margin-left:70px;
+}
+.message{
+background-color:;
+width:350px;
+height:10px;
+}
+.message marquee{
+width:350px;
+line-height:15px;
+
+}
+.writen{
+width:350px;
+height:70px;
+position:absolute;
+left:133px;
+top:120px;
+background-color:;
+}
